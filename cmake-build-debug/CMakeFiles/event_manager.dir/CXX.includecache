@@ -1,0 +1,112 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/EventCollection/event_collection.cpp
+iostream
+-
+utility
+-
+event_collection.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/EventCollection/event_collection.h
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/EventCollection/event_collection.h
+vector
+-
+fstream
+-
+../Model/event.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Model/event.h
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Model/event.cpp
+event.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Model/event.h
+utility
+-
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Model/event.h
+string
+-
+iostream
+-
+../Utils/date.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Utils/date.h
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/CreateNewEventCommand.cpp
+CreateNewEventCommand.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/CreateNewEventCommand.h
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/CreateNewEventCommand.h
+command.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/command.h
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/DeleteExistingEventCommand.cpp
+DeleteExistingEventCommand.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/DeleteExistingEventCommand.h
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/DeleteExistingEventCommand.h
+command.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/command.h
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/PrintAllEventsCommand.cpp
+PrintAllEventsCommand.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/PrintAllEventsCommand.h
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/PrintAllEventsCommand.h
+command.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/command.h
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/UpdateExistngEventCommand.cpp
+UpdateExistngEventCommand.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/UpdateExistngEventCommand.h
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/UpdateExistngEventCommand.h
+command.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/command.h
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/command.h
+../../EventCollection/event_collection.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/EventCollection/event_collection.h
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/menu.cpp
+iostream
+-
+menu.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/menu.h
+command/DeleteExistingEventCommand.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/DeleteExistingEventCommand.h
+command/PrintAllEventsCommand.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/PrintAllEventsCommand.h
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/menu.h
+../EventCollection/event_collection.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/EventCollection/event_collection.h
+command/CreateNewEventCommand.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/CreateNewEventCommand.h
+command/UpdateExistngEventCommand.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/UpdateExistngEventCommand.h
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Utils/date.cpp
+iostream
+-
+ctime
+-
+iomanip
+-
+utility
+-
+date.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Utils/date.h
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Utils/date.h
+string
+-
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/main.cpp
+UI/menu.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/menu.h
+

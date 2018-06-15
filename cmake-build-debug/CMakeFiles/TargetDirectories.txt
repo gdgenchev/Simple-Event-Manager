@@ -1,0 +1,3 @@
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/cmake-build-debug/CMakeFiles/event_manager.dir

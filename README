@@ -1,0 +1,6 @@
+To run the program open cmake-build-debug in terminal and write ./event_manager
+The solution works with a CSV file located in cmake-build-debug, whose name you are asked to provide when you start the application.
+If you don't provide a name, the default file input will be used.
+If you enter a non-existent file, an empty file will be created for you.
+After this, a menu will appear with available options.
+To use it enter integer 1-5(Don't try to enter something else ;))
