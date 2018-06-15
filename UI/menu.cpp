@@ -17,6 +17,7 @@ void Menu::printAvailableCommands() {
 }
 
 void Menu::run() {
+    EventCollection events(fileName);
     while (true) {
         printAvailableCommands();
         int input;
@@ -44,7 +45,7 @@ void Menu::run() {
                 break;
         }
         if (command) {
-            command->execute(*events);
+            command->execute(events);
         } else {
             std::cout << "Invalid input!\n";
         }
@@ -53,14 +54,8 @@ void Menu::run() {
 
 Menu::Menu() {
     std::cout << "Enter file name for storing events:\n";
-    std::string fileName;
     std::getline(std::cin, fileName);
     if (fileName.empty()) {
         fileName = "input";
     }
-    events = new EventCollection(fileName);
-}
-
-Menu::~Menu() {
-    delete events;
 }

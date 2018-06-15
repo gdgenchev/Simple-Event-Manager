@@ -12,12 +12,11 @@
 
 class Menu {
 private:
-    EventCollection* events;
+    std::string fileName;
     void printAvailableCommands();
 public:
     Menu();
     void run();
-    ~Menu();
 };
 
 
