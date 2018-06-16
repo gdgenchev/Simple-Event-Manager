@@ -5,17 +5,21 @@
 #include <iostream>
 #include <utility>
 #include "event_collection.h"
-
+#include <unistd.h>
 
 void EventCollection::populateVector(std::ifstream& input) {
     std::string name;
     std::string location;
     std::string startStrDate;
     std::string endStrDate;
+    std::string startTime;
+    std::string endTime;
     while (!input.eof()) {
         std::getline(input, name, ',');
         std::getline(input, location, ',');
         std::getline(input, startStrDate, ',');
+        std::getline(input, endStrDate, ',');
+        std::getline(input, endStrDate, ',');
         std::getline(input, endStrDate, ',');
         Date startDate(startStrDate);
         Date endDate(endStrDate);
@@ -28,7 +32,6 @@ bool is_empty(std::ifstream& input)
     return input.peek() == std::ifstream::traits_type::eof();
 }
 EventCollection::EventCollection(std::string fileName) {
-
     this->fileName = fileName;
     std::ifstream input;
     input.open(fileName, std::fstream::out);
@@ -40,16 +43,16 @@ EventCollection::EventCollection(std::string fileName) {
 
 void EventCollection::addEvent(const Event &event) {
     events.push_back(event);
-    updateFile();
     std::cout << "Event successfully added!\n";
+    appendToFile(event);
 }
 
 void EventCollection::updateExistingEvent(const std::string &eventName, const Event &updatedEvent) {
     for (Event &event: events) {
         if (event.getName() == eventName) {
             event = updatedEvent;
-            updateFile();
             std::cout << "Event successfully updated!\n";
+            updateFile();
             return;
         }
     }
@@ -66,7 +69,6 @@ void EventCollection::deleteEvent(const std::string &eventName) {
         }
     }
     std::cout << "Event not found!\n";
-
 }
 
 void EventCollection::printAllEvents() const {
@@ -75,10 +77,15 @@ void EventCollection::printAllEvents() const {
     }
 }
 
+void EventCollection::appendToFile(const Event& event) {
+    std::ofstream out(fileName, std::ios::app);
+    out << event << std::endl;
+    out.close();
+}
+
 void EventCollection::updateFile() {
     std::ofstream out(fileName);
     for (auto &event : events) {
         out << event << std::endl;
     }
-    out.close();
 }

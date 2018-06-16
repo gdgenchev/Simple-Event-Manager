@@ -7,16 +7,17 @@
 
 
 #include <string>
+#include "time.h"
 
 class Date {
 private:
     short day;
     short month;
     int year;
-    void parseStringDate(const std::string& date, short& day, short& month, int& year);
+    Time time;
+    void parseStringDate(const std::string& date);
 public:
     Date();
-    Date(short day, short month,int year);
     explicit Date(std::string date);
     std::string getPrettyDate() const;
     bool operator==(const Date& other) const;

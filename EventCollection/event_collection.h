@@ -15,6 +15,7 @@ private:
     std::string fileName;
     std::vector<Event> events;
     void populateVector(std::ifstream& input);
+    void appendToFile(const Event& event);
     void updateFile();
 public:
     explicit EventCollection(std::string fileName);

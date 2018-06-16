@@ -9,25 +9,14 @@
 #include "date.h"
 
 
-void Date::parseStringDate(const std::string& date, short& day, short& month, int& year) {
+void Date::parseStringDate(const std::string& date) {
     std::istringstream is(date);
+    short hours;
+    short minutes;
     char delim;
-    is >> day >> delim >> month >> delim >> year;
-}
-
-Date::Date() {
-    time_t t = time(nullptr);
-    tm tm = *std::localtime(&t);
-    std::ostringstream oss;
-    oss << std::put_time(&tm, "%d.%m.%Y");
-    std::string str = oss.str();
-    parseStringDate(str, day, month, year);
-}
-
-Date::Date(short day, short month,int year) {
-    this->day = day;
-    this->month = month;
-    this->year = year;
+    is >> day  >> delim >> month >> delim >> year >>  hours >> delim >> minutes;
+    time.setHours(hours);
+    time.setMinutes(minutes);
 }
 
 std::string Date::getPrettyDate() const {
@@ -43,11 +32,13 @@ std::string Date::getPrettyDate() const {
     result.append(std::to_string(month));
     result.append(".");
     result.append(std::to_string(year));
+    result.append(" ");
+    result.append(time.toString());
     return result;
 }
 
 Date::Date(std::string date) {
-    parseStringDate(date, day, month, year);
+    parseStringDate(date);
 }
 
 bool Date::operator==(const Date &other) const {
@@ -71,7 +62,7 @@ bool Date::isValid() const {
     } else {
         isValidDay = (day >= 1 && day <= 31);
     }
-    return isValidDay && isValidMonth && isValidYear;
+    return isValidDay && isValidMonth && isValidYear && time.isValid();
 }
 
 bool Date::operator>=(const Date &other) const {
@@ -88,6 +79,12 @@ bool Date::operator>(const Date &other) const {
     if (day > other.day) {
         return true;
     }
-    return false;
+    return time > other.time;
+}
+
+Date::Date() {
+    day = 0;
+    month = 0;
+    year = 0;
 }
 

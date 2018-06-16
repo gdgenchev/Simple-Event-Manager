@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/event_manager.dir/UI/command/UpdateExistngEventCommand.cpp.o"
   "CMakeFiles/event_manager.dir/UI/command/DeleteExistingEventCommand.cpp.o"
   "CMakeFiles/event_manager.dir/UI/command/PrintAllEventsCommand.cpp.o"
+  "CMakeFiles/event_manager.dir/Utils/time.cpp.o"
   "event_manager.pdb"
   "event_manager"
 )

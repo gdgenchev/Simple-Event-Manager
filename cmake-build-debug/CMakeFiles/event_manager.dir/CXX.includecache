@@ -13,6 +13,8 @@ utility
 -
 event_collection.h
 /home/georgi/Programming is Life/PROGRAMISTA/event_manager/EventCollection/event_collection.h
+unistd.h
+-
 
 /home/georgi/Programming is Life/PROGRAMISTA/event_manager/EventCollection/event_collection.h
 vector
@@ -35,6 +37,8 @@ iostream
 -
 ../Utils/date.h
 /home/georgi/Programming is Life/PROGRAMISTA/event_manager/Utils/date.h
+../Utils/time.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Utils/time.h
 
 /home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/CreateNewEventCommand.cpp
 CreateNewEventCommand.h
@@ -104,6 +108,18 @@ date.h
 
 /home/georgi/Programming is Life/PROGRAMISTA/event_manager/Utils/date.h
 string
+-
+time.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Utils/time.h
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Utils/time.cpp
+time.h
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Utils/time.h
+sstream
+-
+
+/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Utils/time.h
+iostream
 -
 
 /home/georgi/Programming is Life/PROGRAMISTA/event_manager/main.cpp

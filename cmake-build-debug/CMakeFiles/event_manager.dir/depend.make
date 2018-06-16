@@ -5,10 +5,12 @@ CMakeFiles/event_manager.dir/EventCollection/event_collection.cpp.o: ../EventCol
 CMakeFiles/event_manager.dir/EventCollection/event_collection.cpp.o: ../EventCollection/event_collection.h
 CMakeFiles/event_manager.dir/EventCollection/event_collection.cpp.o: ../Model/event.h
 CMakeFiles/event_manager.dir/EventCollection/event_collection.cpp.o: ../Utils/date.h
+CMakeFiles/event_manager.dir/EventCollection/event_collection.cpp.o: ../Utils/time.h
 
 CMakeFiles/event_manager.dir/Model/event.cpp.o: ../Model/event.cpp
 CMakeFiles/event_manager.dir/Model/event.cpp.o: ../Model/event.h
 CMakeFiles/event_manager.dir/Model/event.cpp.o: ../Utils/date.h
+CMakeFiles/event_manager.dir/Model/event.cpp.o: ../Utils/time.h
 
 CMakeFiles/event_manager.dir/UI/command/CreateNewEventCommand.cpp.o: ../EventCollection/event_collection.h
 CMakeFiles/event_manager.dir/UI/command/CreateNewEventCommand.cpp.o: ../Model/event.h
@@ -16,6 +18,7 @@ CMakeFiles/event_manager.dir/UI/command/CreateNewEventCommand.cpp.o: ../UI/comma
 CMakeFiles/event_manager.dir/UI/command/CreateNewEventCommand.cpp.o: ../UI/command/CreateNewEventCommand.h
 CMakeFiles/event_manager.dir/UI/command/CreateNewEventCommand.cpp.o: ../UI/command/command.h
 CMakeFiles/event_manager.dir/UI/command/CreateNewEventCommand.cpp.o: ../Utils/date.h
+CMakeFiles/event_manager.dir/UI/command/CreateNewEventCommand.cpp.o: ../Utils/time.h
 
 CMakeFiles/event_manager.dir/UI/command/DeleteExistingEventCommand.cpp.o: ../EventCollection/event_collection.h
 CMakeFiles/event_manager.dir/UI/command/DeleteExistingEventCommand.cpp.o: ../Model/event.h
@@ -23,6 +26,7 @@ CMakeFiles/event_manager.dir/UI/command/DeleteExistingEventCommand.cpp.o: ../UI/
 CMakeFiles/event_manager.dir/UI/command/DeleteExistingEventCommand.cpp.o: ../UI/command/DeleteExistingEventCommand.h
 CMakeFiles/event_manager.dir/UI/command/DeleteExistingEventCommand.cpp.o: ../UI/command/command.h
 CMakeFiles/event_manager.dir/UI/command/DeleteExistingEventCommand.cpp.o: ../Utils/date.h
+CMakeFiles/event_manager.dir/UI/command/DeleteExistingEventCommand.cpp.o: ../Utils/time.h
 
 CMakeFiles/event_manager.dir/UI/command/PrintAllEventsCommand.cpp.o: ../EventCollection/event_collection.h
 CMakeFiles/event_manager.dir/UI/command/PrintAllEventsCommand.cpp.o: ../Model/event.h
@@ -30,6 +34,7 @@ CMakeFiles/event_manager.dir/UI/command/PrintAllEventsCommand.cpp.o: ../UI/comma
 CMakeFiles/event_manager.dir/UI/command/PrintAllEventsCommand.cpp.o: ../UI/command/PrintAllEventsCommand.h
 CMakeFiles/event_manager.dir/UI/command/PrintAllEventsCommand.cpp.o: ../UI/command/command.h
 CMakeFiles/event_manager.dir/UI/command/PrintAllEventsCommand.cpp.o: ../Utils/date.h
+CMakeFiles/event_manager.dir/UI/command/PrintAllEventsCommand.cpp.o: ../Utils/time.h
 
 CMakeFiles/event_manager.dir/UI/command/UpdateExistngEventCommand.cpp.o: ../EventCollection/event_collection.h
 CMakeFiles/event_manager.dir/UI/command/UpdateExistngEventCommand.cpp.o: ../Model/event.h
@@ -37,6 +42,7 @@ CMakeFiles/event_manager.dir/UI/command/UpdateExistngEventCommand.cpp.o: ../UI/c
 CMakeFiles/event_manager.dir/UI/command/UpdateExistngEventCommand.cpp.o: ../UI/command/UpdateExistngEventCommand.h
 CMakeFiles/event_manager.dir/UI/command/UpdateExistngEventCommand.cpp.o: ../UI/command/command.h
 CMakeFiles/event_manager.dir/UI/command/UpdateExistngEventCommand.cpp.o: ../Utils/date.h
+CMakeFiles/event_manager.dir/UI/command/UpdateExistngEventCommand.cpp.o: ../Utils/time.h
 
 CMakeFiles/event_manager.dir/UI/menu.cpp.o: ../EventCollection/event_collection.h
 CMakeFiles/event_manager.dir/UI/menu.cpp.o: ../Model/event.h
@@ -48,9 +54,14 @@ CMakeFiles/event_manager.dir/UI/menu.cpp.o: ../UI/command/command.h
 CMakeFiles/event_manager.dir/UI/menu.cpp.o: ../UI/menu.cpp
 CMakeFiles/event_manager.dir/UI/menu.cpp.o: ../UI/menu.h
 CMakeFiles/event_manager.dir/UI/menu.cpp.o: ../Utils/date.h
+CMakeFiles/event_manager.dir/UI/menu.cpp.o: ../Utils/time.h
 
 CMakeFiles/event_manager.dir/Utils/date.cpp.o: ../Utils/date.cpp
 CMakeFiles/event_manager.dir/Utils/date.cpp.o: ../Utils/date.h
+CMakeFiles/event_manager.dir/Utils/date.cpp.o: ../Utils/time.h
+
+CMakeFiles/event_manager.dir/Utils/time.cpp.o: ../Utils/time.cpp
+CMakeFiles/event_manager.dir/Utils/time.cpp.o: ../Utils/time.h
 
 CMakeFiles/event_manager.dir/main.cpp.o: ../EventCollection/event_collection.h
 CMakeFiles/event_manager.dir/main.cpp.o: ../Model/event.h
@@ -59,5 +70,6 @@ CMakeFiles/event_manager.dir/main.cpp.o: ../UI/command/UpdateExistngEventCommand
 CMakeFiles/event_manager.dir/main.cpp.o: ../UI/command/command.h
 CMakeFiles/event_manager.dir/main.cpp.o: ../UI/menu.h
 CMakeFiles/event_manager.dir/main.cpp.o: ../Utils/date.h
+CMakeFiles/event_manager.dir/main.cpp.o: ../Utils/time.h
 CMakeFiles/event_manager.dir/main.cpp.o: ../main.cpp
 

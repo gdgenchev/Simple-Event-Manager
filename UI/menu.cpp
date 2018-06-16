@@ -45,6 +45,7 @@ void Menu::run() {
                 break;
         }
         if (command) {
+            std::cin.ignore();
             command->execute(events);
         } else {
             std::cout << "Invalid input!\n";

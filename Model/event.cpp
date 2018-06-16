@@ -27,17 +27,16 @@ bool Event::operator==(const Event &other) const {
 
 std::istream &operator>>(std::istream &is, Event &event) {
     bool valid = false;
-    std::cin.ignore();
     while (!valid) {
         std::cout << "Enter event name:\n";
         std::getline(is, event.name);
         std::cout << "Enter event location:\n";
         std::getline(is, event.location);
-        std::cout << "Enter event starting date(format[xx.xx.xxxx]:\n";
+        std::cout << "Enter event starting date and time(format[xx.xx.xxxx] [xx:xx]:\n";
         std::string startStrDate;
         std::string endStrDate;
         std::getline(is, startStrDate);
-        std::cout << "Enter event ending date(format[xx.xx.xxxx]:\n";
+        std::cout << "Enter event ending date(format[xx.xx.xxxx] [xx:xx]:\n";
         std::getline(is, endStrDate);
         Date startDate(startStrDate);
         Date endDate(endStrDate);

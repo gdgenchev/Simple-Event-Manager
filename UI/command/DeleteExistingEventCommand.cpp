@@ -11,7 +11,6 @@ void DeleteExistingEventCommand::execute(EventCollection &events) {
 }
 
 void DeleteExistingEventCommand::readEventToBeDeletedName(std::string &eventName) {
-    std::cin.ignore();
     std::cout << "Enter the name of the event you want to delete:\n";
     std::getline(std::cin, eventName);
 }

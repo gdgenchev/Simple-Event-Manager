@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/command/UpdateExistngEventCommand.cpp" "/home/georgi/Programming is Life/PROGRAMISTA/event_manager/cmake-build-debug/CMakeFiles/event_manager.dir/UI/command/UpdateExistngEventCommand.cpp.o"
   "/home/georgi/Programming is Life/PROGRAMISTA/event_manager/UI/menu.cpp" "/home/georgi/Programming is Life/PROGRAMISTA/event_manager/cmake-build-debug/CMakeFiles/event_manager.dir/UI/menu.cpp.o"
   "/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Utils/date.cpp" "/home/georgi/Programming is Life/PROGRAMISTA/event_manager/cmake-build-debug/CMakeFiles/event_manager.dir/Utils/date.cpp.o"
+  "/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Utils/time.cpp" "/home/georgi/Programming is Life/PROGRAMISTA/event_manager/cmake-build-debug/CMakeFiles/event_manager.dir/Utils/time.cpp.o"
   "/home/georgi/Programming is Life/PROGRAMISTA/event_manager/main.cpp" "/home/georgi/Programming is Life/PROGRAMISTA/event_manager/cmake-build-debug/CMakeFiles/event_manager.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

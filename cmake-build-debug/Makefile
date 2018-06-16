@@ -339,6 +339,33 @@ Utils/date.cpp.s:
 	$(MAKE) -f CMakeFiles/event_manager.dir/build.make CMakeFiles/event_manager.dir/Utils/date.cpp.s
 .PHONY : Utils/date.cpp.s
 
+Utils/time.o: Utils/time.cpp.o
+
+.PHONY : Utils/time.o
+
+# target to build an object file
+Utils/time.cpp.o:
+	$(MAKE) -f CMakeFiles/event_manager.dir/build.make CMakeFiles/event_manager.dir/Utils/time.cpp.o
+.PHONY : Utils/time.cpp.o
+
+Utils/time.i: Utils/time.cpp.i
+
+.PHONY : Utils/time.i
+
+# target to preprocess a source file
+Utils/time.cpp.i:
+	$(MAKE) -f CMakeFiles/event_manager.dir/build.make CMakeFiles/event_manager.dir/Utils/time.cpp.i
+.PHONY : Utils/time.cpp.i
+
+Utils/time.s: Utils/time.cpp.s
+
+.PHONY : Utils/time.s
+
+# target to generate assembly for a file
+Utils/time.cpp.s:
+	$(MAKE) -f CMakeFiles/event_manager.dir/build.make CMakeFiles/event_manager.dir/Utils/time.cpp.s
+.PHONY : Utils/time.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -399,6 +426,9 @@ help:
 	@echo "... Utils/date.o"
 	@echo "... Utils/date.i"
 	@echo "... Utils/date.s"
+	@echo "... Utils/time.o"
+	@echo "... Utils/time.i"
+	@echo "... Utils/time.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

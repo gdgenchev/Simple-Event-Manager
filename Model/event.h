@@ -8,6 +8,7 @@
 #include <string>
 #include  <iostream>
 #include "../Utils/date.h"
+#include "../Utils/time.h"
 
 class Event {
 private:

@@ -135,6 +135,12 @@
 		<Unit filename="/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Utils/date.h">
 			<Option target="event_manager"/>
 		</Unit>
+		<Unit filename="/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Utils/time.cpp">
+			<Option target="event_manager"/>
+		</Unit>
+		<Unit filename="/home/georgi/Programming is Life/PROGRAMISTA/event_manager/Utils/time.h">
+			<Option target="event_manager"/>
+		</Unit>
 		<Unit filename="/home/georgi/Programming is Life/PROGRAMISTA/event_manager/main.cpp">
 			<Option target="event_manager"/>
 		</Unit>
