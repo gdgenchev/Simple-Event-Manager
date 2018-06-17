@@ -27,10 +27,12 @@ void EventCollection::populateVector(std::ifstream& input) {
         events.push_back(event);
     }
 }
+
 bool is_empty(std::ifstream& input)
 {
     return input.peek() == std::ifstream::traits_type::eof();
 }
+
 EventCollection::EventCollection(std::string fileName) {
     this->fileName = fileName;
     std::ifstream input;
@@ -42,18 +44,34 @@ EventCollection::EventCollection(std::string fileName) {
 }
 
 void EventCollection::addEvent(const Event &event) {
-    events.push_back(event);
-    std::cout << "Event successfully added!\n";
-    appendToFile(event);
+    pid_t pid = fork();
+    if (pid > 0) {
+        events.push_back(event);
+        std::cout << "Event successfully added!\n";
+        return;
+    } else if (pid == 0) {
+        appendToFile(event);
+        exit(0);
+    } else {
+        std::cerr << "Error forking!\n";
+    }
 }
 
 void EventCollection::updateExistingEvent(const std::string &eventName, const Event &updatedEvent) {
     for (Event &event: events) {
         if (event.getName() == eventName) {
-            event = updatedEvent;
-            std::cout << "Event successfully updated!\n";
-            updateFile();
-            return;
+            pid_t pid = fork();
+            if (pid > 0) {
+                event = updatedEvent;
+                std::cout << "Event successfully updated!\n";
+                return;
+            } else if (pid == 0) {
+                updateFile();
+                exit(0);
+            } else {
+                std::cerr << "Error forking!\n";
+                return;
+            }
         }
     }
     std::cout << "Event not found!\n";
@@ -62,10 +80,18 @@ void EventCollection::updateExistingEvent(const std::string &eventName, const Ev
 void EventCollection::deleteEvent(const std::string &eventName) {
     for (int i = 0; i < events.size(); i++) {
         if (events[i].getName() == eventName) {
-            events.erase(events.begin() + i);
-            std::cout << "Event successfully delete!\n";
-            updateFile();
-            return;
+            pid_t pid = fork();
+            if (pid > 0) {
+                events.erase(events.begin() + i);
+                std::cout << "Event successfully delete!\n";
+                return;
+            } else if (pid == 0) {
+                updateFile();
+                exit(0);
+            } else {
+                std::cerr << "Error forking!\n";
+                return;
+            }
         }
     }
     std::cout << "Event not found!\n";

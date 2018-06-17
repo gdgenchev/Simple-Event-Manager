@@ -8,7 +8,6 @@ void UpdateExistingEventCommand::execute(EventCollection &events) {
     std::string eventName;
     Event updatedEvent;
     getEventNameAndReadUpdates(eventName, updatedEvent);
-    std::cout << eventName << std::endl;
     events.updateExistingEvent(eventName, updatedEvent);
 }
 
